@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav li {
+            list-style: none;
+            font-size: 24px;
+            margin: 0px 10px;
+        }
+
+        nav #login-link {
+            margin-right: 40px;
+        }
+
+        .login-form-container {
+            height: 86vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form-container form{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login-form-container form h2{
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: -0px;
+        }
+
+        .login-form-container form input{
+            padding: 10px 6px;
+        }
+
+        .login-form-container form button{
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>blogs</li>
+            <li>profile</li>
+        </ul>
+        <li id="login-link">login</li>
+    </nav>
+
+    <section class="login-form-container">
+        <form>
+            <h2>Please login.</h2>
+            <input type="email" required>
+            <input type="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+
+    <style>
+        body {
+            max-width: 1140px;
+            border: 1px solid brown;
+            margin: 0 auto;
+        }
+
+        .img-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-container div{
+            width: 50%;
+        }
+
+        .img-container div img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .img-container{
+                flex-direction: column-reverse;
+            }
+
+            .img-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Responsive Deign</h2>
+        <ul>
+            <li>Viewport meta tag</li>
+            <li>Css relative units</li>
+            <li>Body max width and horizontal center align</li>
+            <li>Image fluid</li>
+            <li>Two column flex and use media query with flex direction column</li>
+            <li>Multi column grid layout</li>
+            <li>Manu responisve: will need javascript</li>
+        </ul>
+
+        <br />
+        <br />
+
+        <div class="img-container">
+            <div><img src="./media/food.jpg" alt=""></div>
+            <div><img src="./media/tiger.jpg" alt=""></div>
+        </div>
+    </main>
+</body>
+
+</html>
